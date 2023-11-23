@@ -1,5 +1,5 @@
 stages:
-  process:
+  getdata:
     cmd: cat data_raw.csv
     deps:
     - data_raw.csv
