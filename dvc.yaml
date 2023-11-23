@@ -1,5 +1,11 @@
 stages:
   process:
+    cmd: cat data_raw.csv
+    deps:
+    - data_raw.csv
+    outs:
+    - data_raw.csv
+  process:
     cmd: python process_data.py
     deps:
     - process_data.py
